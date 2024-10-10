@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,14 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <main class="flex flex-col h-screen">
+        <header class="bg-slate-600 h-12">Header</header>
+        <div class="h-screen grid grid-cols-5">
+            <aside class="bg-black">Sidebar</aside>
+            <div class="main_section bg-gray-800 col-span-4">Main Area</div>
+        </div>
+
+    </main>
     
 </body>
 <script src="js/app.js"></script>
