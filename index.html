@@ -12,36 +12,38 @@
 </head>
 <body class="">
     <div class="grid grid-rows-6 grid-cols-5 grid-flow-col gap-0">
-        <div class="row-span-6 bg-[#0E1B34] px-4 py-5 gap-5 h-screen">
-            <div class="flex justify-center items-center py-5">
+        <div class="row-span-6 bg-[#0E1B34] px-4 py-5 gap-0">
+            <div class=" h-screen bg-[#0E1B34] fixed top-0 left-0 flex justify-center items-center flex-col py-5 px-10">
+              <div class="w-full flex justify-center items-center py-8 px-8">
                 <img src="images/logo/logo.svg" alt="Logo" class="text-center">
-            </div>
-            <div class="mt-5 grid grid-cols-1 gap-5 py-8">
-                <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
-                    <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Add a user</p>
-                    <p class="text-[#0E1B34] text-[10px] font-light leading-3">(Randomly)</p>
-                </button>
-                <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
-                    <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Double Money</p>
-                </button>
-                <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
-                    <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Sort By Rank</p>
-                    <p class="text-[#0E1B34] text-[10px] font-light leading-3">(Decending)</p>
-                </button>
-                <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
-                    <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Calculate Entire Wealth</p>
-                </button>
-                <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
-                    <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Show All Billionaires</p>
-                </button>
-                <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
-                    <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Richest by industry</p>
-                    <p class="text-[#0E1B34] text-[10px] font-light leading-3">(Technology)</p>
-                </button>
-                <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
-                    <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Richest by states</p>
-                    <p class="text-[#0E1B34] text-[10px] font-light leading-3">(Texas)</p>
-                </button>
+              </div>
+              <div class="mt-5 grid grid-cols-1 gap-5 py-8">
+                  <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
+                      <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Add a user</p>
+                      <p class="text-[#0E1B34] text-[10px] font-light leading-3">(Randomly)</p>
+                  </button>
+                  <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
+                      <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Double Money</p>
+                  </button>
+                  <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
+                      <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Sort By Rank</p>
+                      <p class="text-[#0E1B34] text-[10px] font-light leading-3">(Decending)</p>
+                  </button>
+                  <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
+                      <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Calculate Entire Wealth</p>
+                  </button>
+                  <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
+                      <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Show All Billionaires</p>
+                  </button>
+                  <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
+                      <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Richest by industry</p>
+                      <p class="text-[#0E1B34] text-[10px] font-light leading-3">(Technology)</p>
+                  </button>
+                  <button class="btn w-full bg-white flex-1 justify-center items-center flex-col flex-wrap ">
+                      <p class="text-[#0E1B34] text-[12px] font-bold leading-3">Richest by states</p>
+                      <p class="text-[#0E1B34] text-[10px] font-light leading-3">(Texas)</p>
+                  </button>
+              </div>
             </div>
         </div>
         <div class="row-span-1 col-span-4 bg-[#FCFAFA] grid grid-cols-1 px-6">
@@ -64,6 +66,20 @@
         </div>
         <div class="row-span-5 col-span-4  bg-[#D9D9D9] p-6">
             <h2 class="text-[#0E1B34] text-[14px] font-bold">Hello, User!</h2>
+            <div class="spinner">
+              <div class="lds-roller">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </div>
+          
+              <div>Loading...</div>
+          </div>
             <div class="overflow-x-auto">
                 <table class="table">
                   <!-- head -->
@@ -105,7 +121,7 @@
                 </table>
               </div>
         </div>
-      </div>
+    </div>
 </body>
 <script src="js/app.js"></script>
 </html>
